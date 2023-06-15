@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html  dir="rtl">
+	<head>
+		<title>تطبيق للجافا سكربت</title>
+		<script>
+			function TurnOn(){
+			  document.getElementById('myImage').src = 'light_on.png';
+			  document.getElementById('myText').style.visibility = "visible";
+			}
+			
+			function TurnOff(){
+			  document.getElementById('myImage').src = 'light_off.png';
+			  document.getElementById('myText').style.visibility = "hidden";
+			}
+		</script>
+	</head>
+
+
+	<body style="background-color: black;">
+	
+		<h1 style="color:white;">يوجد نص خفي، افتح الإنارة لرؤيته</h1>
+		
+		<button onclick="TurnOn()">افتح المصباح</button>
+		<button onclick="TurnOff()">أغلق المصباح</button>
+		
+		<br><br><br><br>
+		
+		<img src="light_off.png" style="width:100px" id="myImage">
+		
+		<p style="color:green; font-size:24px; visibility: hidden;" id="myText">أغتنم خمسا قبل خمس ومن ضمنها شبابك :)</p>
+	</body>
+</html>
+
